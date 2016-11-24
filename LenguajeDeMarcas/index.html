@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Manual HTML</title>
+		<meta charset= "utf-8">
+		<meta name="author" content="Jesus">
+	</head>
+	<body>
+		<h1><b><u>Manual HTML</u></b></h1>
+			<p>HTML es un lenguaje para la creacion de paginas web a traves de las etiquetas, las cuales se escriben entre 
+                           los simbolos de "<" y ">"(menor/mayor que), y con ellas podemos crear entre otras cosas parrafos, 
+                           insertar tablas o imagenes.
+		           Con este documento se pretende ayudar a la creacion de un documento simple de HTML.
+			</p>
+		
+		<h2>Indice</h2>
+		<p>Pulsa en cualquier enlace siguiente para saltar a una determinada sección:</p>
+		<ul>
+			<li><a href="#Estructura basica">Estructura basica</a>
+			<li><a href="#Titulos y articulos">Titulos y articulos</a>
+			<li><a href="#Elementos de agrupación">Elementos de agrupación</a>
+			<li><a href="#Elementos semanticos">Elementos semanticos</a>
+			<li><a href="#Hipervinculos">Hipervinculos</a>
+			<li><a href="#Imagenes">Imagenes</a>
+			<li><a href="#Tablas">Tablas</a>
+		</ul>
+		
+		<article>
+			<a name="Estructura basica"></a>
+			<h3>Estructura basica</h3>
+			<p>Todo documento HTML ha de tener una determinada serie de etiquetas para que este bien formada y funcione correctamente,
+		   	   ademas de que <b><u><strong>todas las etiquetas han de abrirse y cerrarse</strong></b></u>, para cerrar basta con escribirla con una contrabarra.
+			</p>
+		
+			<pre>
+			&lt!doctype html&gt
+			&lthtml&gt
+				&lthead&gt
+					&lttitle Titulo del documento &lt/title&gt
+				&lt/head&gt
+				&ltbody&gt
+					Cuerpo del documento.
+				&lt/body&gt
+			</pre>
+		
+			<ul>	<li>&lthtml&gt en esta etiqueta se define que lo utlizado aqui es codigo html.
+				<li>&lt!doctype Html&gt con esta etiqueta se indica el tipo del documento, en este caso html.
+				<li>&lthead&gt con esta etiqueta indicamos la cabecera, en ella tiene que estar obligatoriamente el titulo del documento con la etiqueta &lttitle&gt.
+				<li>&ltbody&gt dentro de esta etiqueta estará el cuerpo del documento, donde introduciremos todo lo demas.
+			</ul>
+		</article>
+		<article>
+			<a name="Titulos y articulos"></a>	
+			<h3>Titulos y articulos</h3>
+			<p>Con la etiqueta <b>hnum</b> (donde num sera un numero del 1 al 6 segun el tamaño que deseemos) modificaremos el texto para indicar
+		   	   que se trata de un titulo.
+			</p>
+			<p>Las etiquetas <b>article</b> y <b>section</b> nos ayudaran organizar el documento en distintas secciones para mayor legibilidad </p>
+		</article>
+		<article>
+			<a name="Elementos de agrupación"></a>
+			<h3>Elementos de agrupación</h3>
+			<p>Parrafos: Con la etiqueta <b>p</b> podremos definir en nuestro documentos parrafos, teniendo en cuenta que <strong>por defecto los saltos de linea y espacios se comprimen.</strong></p>
+			<p>Textos preformateados: Con la etiqueta <b>pre</b> crearemos textos preformateados, es decir, con un tipo de fuente fijo y respetando saltos de linea y espacios</p>
+			<section>
+			<p>Listas:Para crear los elementos de una lista tienen que estar con la etiqueta <b>li</b>:</p>
+				<ul>
+					<li>Con la etiqueta <b>ul</b> crearemos listas desordenadas, solo precedidas de un circulo negro.
+					<li>Con la etiqueta <b>ol</b> crearenos listas ordenadas, por defecto de forma numerica.
+				</ul>
+			<p>Listas de definicion:Con <b>dl</b> crearemos listas de definición, con <b>dt</b> indicaremos el término y con <b>dd</b> su definición.</p>
+			
+			</section>
+			<p>Linea horizontal: Con <b>hr</b> se crea una linea horizontal para separar diferentes secciones.</p>
+		</article>
+		<article>
+			<a name="Elementos semanticos"></a>
+			<h3>Elementos semanticos</h3>
+			<section>
+			<p>Resaltados:</p>
+			<ul>
+				<li><b>i</b>: <i>Bastardilla o Italica</i>
+				<li><b>b</b>: <b>Negrita</b>
+				<li><b>u</b>: <u> Subrayado</u>
+				<li><b>em</b>: <em> Texto con énfasis</em>
+				<li><b>strong</b>: <strong>Texto importante</strong>
+				<li><b>small</b>: <small> Texto pequeño</small>
+			</ul>
+			</section>
+			<p>Salto de linea: Con la etiqueta <b>br</b> crearemos un salto de linea, normalmente usado dentro de los parrafos.</p>
+		</article>
+		<article>
+			<a name="Hipervinculos"></a>
+			<h3>Hipervinculos</h3>
+			<p>Para crear hipervinculos a otras paginas web tienen que crearse con la etiqueta <b>a</b> seguido del atributo href indicando la pagina web a la que queremos crear el vinculo.
+		  	   Dentro de la etiqueta tendremos que poner el nombre del hipervinculo.
+			<br>
+			Ejemplo:
+			<pre>
+			&lta href="http://www.google.com"&gtEnlace a Google&lt/a&gt
+			</pre>
+			Esto daria como resultado: <a href="https://www.google.com">Enlace a Google</a></p>	
+			<p>Para crear hipervinculos internos (enlaces a otras partes del mismo documento) es parecido, aparte de el enlace necesitamos de otro componente, el "ancla",
+			   que será el lugar a donde vayamos al pulsar el enlace. Darse cuenta de que en el nombre del enlace es necesario poner una almohadilla.
+			<br>
+			Ejemplo:
+			<br><br>
+			Ancla:<pre>&lta name="Inicio"&gt&lt/a&gt</pre>
+			Enlace:<pre>&lta href="#Inicio"&gtIr al inicio del documento&lt/a&gt</pre>
+			</p>
+		</article>
+		<article>
+			<a name="Imagenes"></a>
+			<h3>Imagenes</h3>
+			<p>Para insertar imagenes tenemos que usar la etiqueta <b>img</b> seguido del atributo <em>src</em> y en el valor escribir el lugar donde esta la imagen, teniendo en cuenta que depende de donde
+			   estemos, tambien podemos modificar la imagen introduciendo los siguentes atributos y su correspondiente valor: <em>width</em> (anchura), <em>height</em> (altura) y <em>alt</em> (texto descriptivo)
+			<br>
+			Ejemplo:
+			<pre>
+			&ltimg src="ruta_de_la_imagen.jpg"&gt
+			</pre>
+			Algunos formatos de imagen soportados son: png, gif, jpg o svg.
+			</p>
+		</article>
+		<article>
+			<a name="Mapas de Imagen"></a>
+			<h3>Mapas de Imagen</h3>
+		</article>
+		<article>
+			<a name="Tablas"></a>
+			<h3>Datos tabulados: Tablas</h3>
+			<p>Para crear una tabla lo primero es utlizar la etiqueta <b>table</b> y dentro de esta etiqueta crearemos las filas (<b>tr</b>) y columnas (<b>td</b>).
+			<br><br>
+			Ejemplo de una tabla de 2x3 (2 filas y 3 columnas) con el atributo <em>border=1</em> en la etiqueta table para resaltar los bordes:
+			<table border=1>
+				<tr>
+					<td> Fila 1, Columna 1
+					<td> Fila 1, Columna 2
+					<td> Fila 1, Columna 3
+				</tr>
+				<tr>
+					<td> Fila 2, Columna 1
+					<td> Fila 2, Columna 2	
+					<td> Fila 2, Columna 3
+				</tr>
+		</article>
+	</body>
+</html>
