@@ -125,6 +125,23 @@
 		<article>
 			<a name="Mapas de Imagen"></a>
 			<h3>Mapas de Imagen</h3>
+			<p>Los mapas de imagen son una serie de enlances que se colocan en una imagen o una parte de ella, para ello necesitaremos una imagen y usar estas etiquetas:</p>
+			<br><br>
+			<p>Aqui indicaremos el nombre del mapa de imagenes</p>
+			<pre>&ltimg usermap="#nombre_mapa"&gt</pre>
+			<p>Aqui "llamaremos" al mapa y le daremos forma</p>
+			<pre>&ltmap name="nombre:mapa"&gt
+				&ltarea&gt : tantos como bloques de imagen queramos
+					Atributos:
+						-shape: forma, puede ser rectangle,circle, polygon...
+						-coords:coordinadas de las formas separadas por comas:
+								rectangulo= vertice sup. izq, v. inf. der
+								circulo=radio del circulo,centro
+						-href:URL referenciada
+						-alt:texto alternativo
+						-download
+						-target
+			</pre>
 		</article>
 		<article>
 			<a name="Tablas"></a>
@@ -133,7 +150,7 @@
 			<br><br>
 			Ejemplo de una tabla de 2x3 (2 filas y 3 columnas) con el atributo <em>border=1</em> en la etiqueta table para resaltar los bordes:
 			<pre>
-			&ltable border=1&gt
+			&lttable border=1&gt
 				&lttr&gt
 						&lttd&gt Fila 1, Columna 1
 						&lttd&gt Fila 1, Columna 2
