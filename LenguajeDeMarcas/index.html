@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Manual HTML</title>
@@ -32,11 +32,13 @@
 			<a name="Estructura basica"></a>
 			<h3>Estructura basica</h3>
 			
-			<p>Todo documento HTML ha de tener una determinada serie de etiquetas para que este bien formada y su contenido funcione correctamente,
-		   	   ademas <b><u><strong>todas ellas han de abrirse y cerrarse</strong></b></u>, para cerrar basta con escribirla con una contrabarra,<br>
-			   por ejemplo asi seria con la etiqueta para definir los titulos (los titulos los veremos mas adelante):&lth1&gtTitulo/&lth1&gt
+			<p>Todo documento HTML ha de tener una determinada serie de etiquetas para que este bien formada y su contenido se pueda mostrar,
+		   	   ademas *<b><u><strong>la mayoria de ellas han de abrirse y cerrarse para funcionar correctamente</strong></b></u>, para cerrar una etiqueta basta con escribirla con una contrabarra,
+			   por ejemplo asi seria con la etiqueta para definir los titulos (los titulos los veremos mas adelante):&lth1&gtTitulo/&lth1&gt.
+			   <br><br> 
+		           *Para evitar confusiones asumiremos que todas las etiquetas tienen que cerrarse.
 			</p>
-			<p>Aqui tendriamos un documento HTML muy basico, con las etiquetas esenciales y todas cerradas para que funcionen adecuadamente:
+			<p>Aqui tendriamos para visualizar mejor un documento HTML muy basico, con las etiquetas esenciales y todas cerradas para que funcionen adecuadamente:
 			<pre>
 			&lt!doctype html&gt
 			&lthtml&gt
@@ -84,10 +86,10 @@
 				
 			<pre>
 		Lista desordenada:				Lista ordenada:
-		&ltul&gt					&ltol&gt
+		&ltul&gt						&ltol&gt
   			&ltli&gt Elemento de lista 1		 	 &ltli&gt Elemento de lista 1
   			&ltli&gt Elemento de lista 2		  	 &ltli&gt Elemento de lista 2
-		&lt/ul&gt					&lt/ol&gt
+		&lt/ul&gt						&lt/ol&gt
 				
 			</pre>
 			
@@ -101,7 +103,7 @@
 			<a name="Elementos semanticos"></a>
 			<h3>Elementos semanticos</h3>
 			<section>
-			<p>Resaltados:</p>
+			<p>Resaltados de texto:</p>
 			<ul>
 				<li><b>i</b>: <i>Bastardilla o Italica</i>
 				<li><b>b</b>: <b>Negrita</b>
@@ -123,14 +125,19 @@
 			<pre>
 			&lta href="http://www.google.com"&gtEnlace a Google&lt/a&gt
 			</pre>
-			Esto daria como resultado: <a href="https://www.google.com">Enlace a Google</a></p>	
+			Esto daria como resultado:<br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.google.com">Enlace a Google</a></p>	
 			<p>Para crear hipervinculos internos (enlaces a otras partes del mismo documento) es parecido, aparte de el enlace necesitamos de otro componente, el "ancla",
 			   que será el lugar a donde vayamos al pulsar el enlace. Darse cuenta de que en el nombre del enlace es necesario poner una almohadilla.
 			<br>
 			Ejemplo:
 			<br><br>
-			Ancla:<pre>&lta name="Inicio"&gt&lt/a&gt</pre>
-			Enlace:<pre>&lta href="#Inicio"&gtIr al inicio del documento&lt/a&gt</pre>
+			Ancla:
+			<pre>
+			&lta name="Inicio"&gt&lt/a&gt</pre>
+			Enlace:
+			<pre>
+			&lta href="#Inicio"&gtIr al inicio del documento&lt/a&gt</pre>
 			</p>
 			<p>Para ver como funcionan los hipervinculos internos el índice de este documento se han creado mediante este tipo de enlaces, al hacer click en alguno este nos lleva a la parte del manual
 			   que hemos seleccionado mediante el ancla.</p>
@@ -154,9 +161,11 @@
 			<p>Los mapas de imagen son una serie de enlaces que se colocan en una imagen o una parte de ella, para ello necesitaremos una imagen y usar estas etiquetas:</p>
 			<br>
 			<p>Aqui indicaremos el nombre del mapa de imagenes</p>
-			<pre>&ltimg usermap="#nombre_mapa"&gt</pre>
+			<pre>
+			&ltimg usermap="#nombre_mapa"&gt</pre>
 			<p>Aqui "llamaremos" al mapa y le daremos forma</p>
-			<pre>&ltmap name="nombre:mapa"&gt
+			<pre>
+			&ltmap name="nombre:mapa"&gt
 				&ltarea&gt : tantos como bloques de imagen queramos
 					Atributos:
 						-shape: forma, puede ser rectangle,circle, polygon...
@@ -205,7 +214,7 @@
 		</article>
 		<footer>	
 			<p>Con esto concluye este manual de referencia para HTML basico, en el siguiente enlace se puede obtener mas información mas detallada sobre html5:</p>
-		 	<a href="https://www.w3.org/TR/html5/">Enlace a w3c</a><br>
+		 	<a href="https://www.w3.org/TR/html5/">Enlace a w3c</a><br><br>
 	
 			<a href="#Inicio">Volver al inicio del documento</a>
 		</footer>	
